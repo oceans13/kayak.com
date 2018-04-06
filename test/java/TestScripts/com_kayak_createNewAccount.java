@@ -22,9 +22,9 @@ public void  driverInit() throws IOException {
 	 System.setProperty("webdriver.gecko.driver","C:\\Users\\Rathore\\eclipse-workspace\\Kayak001\\src\\geckodriver.exe");
 	 System.out.println("System property is set");
 	  driver=new FirefoxDriver();
-	  driver.manage().timeouts().implicitlyWait(600, TimeUnit.SECONDS);
+	  /*driver.manage().timeouts().implicitlyWait(600, TimeUnit.SECONDS);
 	  WebDriverWait wait = new WebDriverWait(driver, 36000);
-	  wait.until(ExpectedConditions.urlToBe("https://www.kayak.co.in"));
+	  wait.until(ExpectedConditions.urlToBe("https://www.kayak.co.in"));*/
 	  com_kayak_driver_Init hp= new com_kayak_driver_Init();
 	  hp.kayak_hmPage(driver);
   }
